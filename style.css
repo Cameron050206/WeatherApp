@@ -1,12 +1,28 @@
+/* Body styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: hsl(0, 0%, 95%);
+  background-color: #f5f7fa; /* Lighter background */
   margin: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center; /* Center content horizontally */
   align-items: center;
+  height: 100vh; /* Full viewport height */
+  animation: backgroundAnimation 10s ease infinite alternate; /* Animation */
 }
 
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #ffd700; /* Initial background color */
+  }
+  50% {
+    background-color: #ff69b4; /* Another color */
+  }
+  100% {
+    background-color: #87ceeb; /* Final color */
+  }
+}
+
+/* Form styling */
 .weatherForm {
   margin: 20px;
 }
@@ -36,6 +52,7 @@ button[type="submit"]:hover {
   background-color: hsl(122, 39%, 40%);
 }
 
+/* Card styling */
 .card {
   background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
   padding: 50px;
@@ -47,6 +64,7 @@ button[type="submit"]:hover {
   align-items: center;
 }
 
+/* Text styling */
 h1 {
   font-size: 3.5rem;
   margin-top: 0;
